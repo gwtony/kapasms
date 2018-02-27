@@ -1,5 +1,5 @@
-# Kapacitor Ljsms
-Kapacitor ljsms adapter plugin
+# Kapacitor Sms
+Kapacitor sms adapter plugin
 
 ## Dependency
 * Kapacitor version: 1.4.0
@@ -8,12 +8,12 @@ Kapacitor ljsms adapter plugin
 * git clone https://github.com/influxdata/kapacitor
 * cd kapacitor && git checkout v1.4.0
 
-## Get Ljsms Adapter Plugin
-* git clone git@git.lianjia.com:lianjia-sysop/kapacitor-ljsms.git
+## Get Sms Adapter Plugin
+* git clone github.com/gwtony/kapasms.git
 
-## Patch Ljsms Plugin
+## Patch Sms Plugin
 * cd kapacitor
-* patch -p1 < ../kapacitor-ljsms/kapacitor.ljsms.patch 
+* patch -p1 < ../kapasms/kapacitor.sms.patch 
 
 ## Install Kapacitor
 * go install ./...
@@ -23,7 +23,7 @@ Edit /etc/kapacitor/kapacitor.conf add
 ```
 	[ljsms]
 		enabled = true
-		url = "http://sms.lianjia.com/"
+		url = "http://sms.test.com/"
 		group = "some_group"
 		auth = "some_authtoken"
 ```
